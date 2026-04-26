@@ -1,0 +1,30 @@
+/* Custom Code Syntax Highlighting (already partially in your index) */
+.syn-kw { color: #79b8ff; }
+.syn-str { color: #f0a878; }
+.syn-cmt { color: #6a737d; font-style: italic; }
+.syn-brace { color: #c5b499; }
+
+/* Custom Scrollbar for Code Blocks */
+.code-panel__body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.code-panel__body::-webkit-scrollbar-thumb {
+  background: rgba(197, 180, 153, 0.2);
+  border-radius: 10px;
+}
+
+/* Fix for Safari backdrop-filter */
+.nav {
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+}
+
+/* Fade in for the hero content */
+.hero__inner {
+  animation: slideUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
